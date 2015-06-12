@@ -1,0 +1,13 @@
+ion-view(view-title="Share")
+	ion-nav-buttons(side="right")
+		button.button.button-positive(ng-click="openModal()") Share
+	ion-content
+		ion-list(show-delete="false", show-reorder="false", can-swipe="false")
+			ion-item.item-avatar.item-checkbox(ng-click="friend.selected = !friend.selected" ng-repeat="friend in friends")
+				//- i.icon.ion-person
+				img(ng-src="{{friend.avatar}}")
+				label.checkbox(style="left: inherit;")
+					input(type="checkbox" ng-model="friend.selected")
+				h2(style="margin-left:8px;font-size: 23px;line-height: 37px;") {{friend.firstName}} {{friend.lastName}}
+
+				

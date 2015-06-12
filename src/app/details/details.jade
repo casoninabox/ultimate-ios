@@ -1,0 +1,21 @@
+ion-view(view-title="")
+	ion-content
+		ion-list(show-delete="false", show-reorder="false", can-swipe="false")
+			ion-item.item-thumbnail-left
+				.iconimg
+					file-icon
+				h2(style="margin-top: 14px;") {{file.name}}
+				p created by {{file.user.firstName}} {{file.user.lastName}}
+				//- span.item-note file
+			ion-item {{file.type}}
+				span.item-note type
+			ion-item {{file.size}}
+				span.item-note size
+			ion-item {{file.added | date:'MMMM dd, yyyy @ HH:mm:ss'}}
+				span.item-note added
+			ion-item {{file.modified | date:'MMMM dd, yyyy @ HH:mm:ss'}}
+				span.item-note modified
+			
+			//- ion-item(ng-repeat="key in keys") {{file[key]}}
+			//- 	span.item-note {{key}}
+		button.button.button-block.button-positive(ng-hide="disableShare" ui-sref="share({fileId: fileId})") Share

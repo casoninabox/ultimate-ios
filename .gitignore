@@ -1,0 +1,5 @@
+/build
+/node_modules
+/uploads
+/vendor
+/server/node_modules

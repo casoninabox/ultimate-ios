@@ -1,0 +1,9 @@
+ion-modal-view
+	ion-header-bar
+		h1.title Success
+	ion-content.padding
+		.card.padding
+			.item.item-text-wrap
+				p You have successfully shared {{file.name}} with {{(friends | filter:{selected: true}).length}} people!
+				//- img(style="float:left; width:128px; margin: 20px 15px 30px 0;" ng-repeat="friend in friends | filter:{selected: true}" ng-src="{{friend.avatar}}") 
+		button.button.button-block.button-positive(ng-click="done()") Done

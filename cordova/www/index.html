@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="forklyApp" ng-controller="AppCtrl" ng-cloak>
+  <head>
+    <title ng-bind="pageTitle"></title>
+    <meta name="fragment" content="!">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="shortcut icon" ng-href="assets/assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/forkly-1.0.0.css">
+    <script type="text/javascript" src="vendor/ionic/js/ionic.bundle.js"></script>
+    <script type="text/javascript" src="vendor/angular-ui-utils/ui-utils.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="src/app/app.js"></script>
+    <script type="text/javascript" src="src/app/details/details.js"></script>
+    <script type="text/javascript" src="src/app/directives/fileIcon.js"></script>
+    <script type="text/javascript" src="src/app/filters/readableTime.js"></script>
+    <script type="text/javascript" src="src/app/friends/friends.js"></script>
+    <script type="text/javascript" src="src/app/home/home.js"></script>
+    <script type="text/javascript" src="src/app/services/files.js"></script>
+    <script type="text/javascript" src="src/app/services/friends.js"></script>
+    <script type="text/javascript" src="src/app/share/share.js"></script>
+    <script type="text/javascript" src="templates-common.js"></script>
+    <script type="text/javascript" src="templates-app.js"></script>
+  </head>
+  <body>
+    <ion-side-menus>
+      <ion-side-menu-content>
+        <ion-nav-bar class="bar-stable">
+          <ion-nav-back-button></ion-nav-back-button>
+          <ion-nav-buttons side="left">
+            <button menu-toggle="left" class="button button-icon button-clear ion-navicon"></button>
+          </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="main"></ion-nav-view>
+      </ion-side-menu-content>
+      <ion-side-menu side="left">
+        <ion-header-bar class="bar-stable">
+          <h1 class="title">Menu</h1>
+        </ion-header-bar>
+        <ion-content>
+          <ion-list>
+            <ion-item menu-close="" ui-sref="home"><i class="ion-document-text pad-right"></i>My Files</ion-item>
+            <ion-item menu-close="" ui-sref="friends"><i class="ion-document-text pad-right"></i>Friends</ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-side-menu>
+    </ion-side-menus>
+  </body>
+</html>

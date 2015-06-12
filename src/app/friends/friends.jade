@@ -1,0 +1,9 @@
+ion-view(view-title="Friends")
+	ion-content
+		ion-list(show-delete="false", show-reorder="false", can-swipe="true")
+			ion-item.item-avatar(ng-repeat="friend in friends" ui-sref="home({id: $index})")
+				img(ng-src="{{friend.avatar}}")
+				//- i.icon.ion-person
+				h3 {{friend.firstName}} {{friend.lastName}}
+				p {{friend.files.length}} Files
+				ion-option-button.button-positive(ng-click="unfriend($index)") Unfriend

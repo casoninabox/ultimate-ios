@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DFDC98F9-69F0-418C-9453-D10B79662409</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Ultimate</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>84EFAB9F204EBA57EC133AA1F73D68ABE78C8C92</key>
+		<string>bitbucket.org:casoninabox/ultimate-test.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>cordova/platforms/ios/Ultimate.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>84EFAB9F204EBA57EC133AA1F73D68ABE78C8C92</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>bitbucket.org:casoninabox/ultimate-test.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>84EFAB9F204EBA57EC133AA1F73D68ABE78C8C92</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>84EFAB9F204EBA57EC133AA1F73D68ABE78C8C92</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ultimate-test</string>
+		</dict>
+	</array>
+</dict>
+</plist>

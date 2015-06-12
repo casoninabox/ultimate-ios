@@ -1,0 +1,16 @@
+ion-view(view-title="{{title}}")
+	ion-nav-buttons( side="right")
+		button.button(ng-hide="disableAdd" ng-click="add()") 
+			i.ion-plus(style="padding: 5px;")
+	ion-content
+		ion-list(show-delete="false", show-reorder="false", can-swipe="!disableAdd")
+			ion-item.item-icon-left(ng-click="details($index)" ng-repeat="file in files" ng-class="{'new' : file.isNew}")
+				file-icon.icon
+				| {{file.name}}
+				//- .iconimg
+				//- 	file-icon
+				//- .bold {{file.name}}
+				//- p Added {{file.added | readableTime}} ago
+				//- p by 
+				//- 	span {{file.user.firstName}} {{file.user.lastName}}
+				ion-option-button.button-assertive(ng-click="delete($index)") Delete

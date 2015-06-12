@@ -1,0 +1,39 @@
+doctype html
+html(ng-app='forklyApp', ng-controller='AppCtrl', ng-cloak)
+	head
+		title(ng-bind='pageTitle')
+		meta(name='fragment', content='!')
+		meta(name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width")
+
+		link(rel='shortcut icon', ng-href='assets/assets/img/favicon.png', type='image/x-icon')
+		
+		<% styles.forEach( function ( file ) { %>
+		link(rel="stylesheet" type="text/css" href="<%= file %>")
+		<% }); %>
+
+		<% scripts.forEach( function ( file ) { %>
+		script(type="text/javascript" src="<%= file %>")
+		<% }); %>
+		//- base(href="/")
+	body()
+		ion-side-menus
+			ion-side-menu-content
+				ion-nav-bar.bar-stable
+					ion-nav-back-button
+					ion-nav-buttons(side="left")
+						button.button.button-icon.button-clear.ion-navicon(menu-toggle="left")
+				ion-nav-view(name="main")
+			ion-side-menu(side='left')
+				ion-header-bar.bar-stable
+					h1.title Menu
+				ion-content
+					ion-list
+						ion-item(menu-close='', ui-sref='home')
+							i.ion-document-text.pad-right
+							| My Files
+						//- ion-item(menu-close='', ui-sref='files')
+						//- 	i.ion-document-text.pad-right
+						//- 	| Shared with Me
+						ion-item(menu-close='', ui-sref='friends')
+							i.ion-document-text.pad-right
+							| Friends
